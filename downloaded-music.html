@@ -1,0 +1,132 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+	<title>Music Website Template</title>
+
+	<meta name="viewport" content="width=device-width" />
+	<meta name="description" content="Music website coded in HTML, CSS, and JQuery" />
+	<meta name="keywords" content="msuic, website, template, responsive" />
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+
+	<link href="https://fonts.googleapis.com/css?family=Tajawal" rel="stylesheet">
+	<link rel="stylesheet" href="css/style.css" type="text/css" title="style" />
+	<style>
+		input[type="file"] {
+			display: none;
+		}
+
+		.custom-file-upload {
+			border: 1px solid #333b57;
+			display: inline-block;
+			padding: 6px 12px;
+			cursor: pointer;
+			background-color: #333b57;
+			color:white;
+			font-family:'Tajawal', sans-serif;
+			font-size:1.5rem;
+			padding:0.2rem;
+		}
+	</style>
+</head>
+
+<body>
+
+	<header>
+		<div id="logo">
+			<h1><a href="index.html">Music Player</a></h1>
+			<h2><a href="index.html">made by Madhvan and Himesh</a></h2>
+		</div>
+	</header>
+
+	<nav class="container">
+		<ul class="clearfix" id="cfix">
+			<li class="icon" id="icon">
+				<a href="javascript:void(0);" onclick="myMenu()">&#9776; Menu</a>
+			</li>
+			<li>
+				<ul class="scroll" id="scroll">
+					<li><a href="#home">Home</a></li>
+					<li><a href="#about">About</a></li>
+					<li><a href="#music">Music</a></li>
+					<li><a href="#news">News</a></li>
+					<li><a href="#videos">Videos</a></li>
+					<li><a href="#subscribe">Subscribe</a></li>
+					<li><a href="#photos">Photos</a></li>
+					<li><a href="contact.html">Contact</a></li>
+				</ul>
+			</li>
+		</ul>
+	</nav>
+
+	<div class="spacer"></div>
+
+	<!-- MAIN CONTENT -->
+	<div class="site_content">
+
+		<div id="content">
+			<h3 class="lines">PLAY YOUR DOWNLOADED MUSIC HERE</h3>
+
+			<!-- FILE NAME SETTINGS -->
+			<h4 style="text-align: center; margin:3rem; font-size:3rem;" id ="file-name">file-name-here</h4>
+
+			<!-- AUDIO PLAYER -->
+
+			<!-- <input id="audio_file" type="file" accept="audio/*" style="padding:10px; font-size:1.3rem; margin-left:40%;" /> -->
+			<label for="audio_file" class="custom-file-upload" style="padding:10px; font-size:1.3rem; margin-left:45%; margin-top:2rem; margin-bottom:4rem;">
+				<input id="audio_file" type="file" accept="audio/*" />
+				UPLOAD HERE
+			</label>
+
+
+			<div style="margin-bottom:3rem;">
+				<audio controls id="audio_player" class="audioplayer" style="border-style:none;"></audio>
+				<!-- <div id="audio-players"></div> -->
+			</div>
+
+		</div>
+
+	</div>
+
+	<!-- FOOTER HERE -->
+	<footer>
+		<ul id="social_media">
+			<li><a href="https://www.facebook.com/sound/collection/" target="_blank">
+					<img src="pictures/icons/facebook.png" alt="Facebook" /></a></li>
+
+			<li><a href="https://about.instagram.com/blog/announcements/introducing-music-for-instagram-stories"
+					target="_blank">
+					<img src="pictures/icons/instagram.png" alt="Instagram" /></a></li>
+
+			<li><a href="https://music.youtube.com/" target="_blank">
+					<img src="pictures/icons/youtube.png" alt="YouTube" /></a></li>
+
+			<li><a href="https://twitter.com/music?lang=en" target="_blank">
+					<img src="pictures/icons/twitter.png" alt="Twitter" /></a></li>
+
+			<li><a href="https://www.apple.com/in/itunes/" target="_blank">
+					<img src="pictures/icons/itunes.png" alt="iTunes" /></a></li>
+
+			<li><a href="https://open.spotify.com/" target="_blank">
+					<img src="pictures/icons/spotify.png" alt="Spotify" /></a></li>
+
+			<li><a href="index.html#subscribe">
+					<img src="pictures/icons/mail.png" alt="Subscribe" /></a></li>
+		</ul>
+
+		<ul id="btmtext">
+			<li>
+				<h6><a href="terms.html">Made by Madhvan Sharma and Himesh Mahabi</a></h6>
+			</li>
+			<li>
+				<h6><a href="web.html">2K19/SE/068 and 2K19/SE/054</a></h6>
+			</li>
+		</ul>
+	</footer>
+
+	<script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+	<script src="js/fixedNavMenu.js"></script>
+	<script src="js/download-music.js"></script>
+</body>
+
+</html>

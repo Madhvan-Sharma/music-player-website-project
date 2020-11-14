@@ -1,0 +1,540 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+	<title>Music Website</title>
+
+	<meta name="viewport" content="width=device-width" />
+	<meta name="description" content="Music website coded in HTML, CSS, and JQuery" />
+	<meta name="keywords" content="msuic, website, template, responsive" />
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+	<link rel="shortcut icon" type="image/x-icon" href="favicon.jpg">
+
+	<link href="https://fonts.googleapis.com/css?family=Tajawal" rel="stylesheet">
+	<link rel="stylesheet" href="css/style.css" type="text/css" title="style" />
+	<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+	<script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+	<!-- scoll-fix resolves Firefox anchor location bug -->
+	<!-- When clicking a navigation option from a different page it does not accurately go to the intended id tag area. -->
+	<!-- This script reloads the page to force the anchor into the right location -->
+	<script>
+		function now() {
+			window.location.reload(true);
+		}
+	</script>
+
+</head>
+
+<body>
+
+	<header>
+		<div id="logo">
+			<h1><a href="index.html">Music Player</a></h1>
+			<h2><a href="index.html">made by Madhvan and Himesh</a></h2>
+		</div>
+	</header>
+
+	<nav class="container">
+		<ul class="clearfix" id="cfix">
+			<li class="icon" id="icon">
+				<a href="javascript:void(0);" onclick="myMenu()">&#9776; Menu</a>
+			</li>
+			<li>
+				<ul class="scroll" id="scroll">
+					<li><a href="#home">Home</a></li>
+					<li><a href="#about">About</a></li>
+					<!-- <li><a href="#merch">Merch</a></li> -->
+					<li><a href="#music">Music</a></li>
+					<li><a href="#news">News</a></li>
+					<!-- <li><a href="#press">Press</a></li> -->
+					<li><a href="#videos">Videos</a></li>
+					<li><a href="#subscribe">Subscribe</a></li>
+					<!-- <li><a href="#shows">Shows</a></li> -->
+					<li><a href="#photos">Photos</a></li>
+					<li><a href="contact.html">Contact</a></li>
+				</ul>
+			</li>
+		</ul>
+	</nav>
+
+	<section id="home">
+		<hr class="horizontal" />
+		<div class="hero">
+			<div id="overlay">
+				<div class="hero-text">
+
+					<h2 style="margin-bottom:2.5rem;">Music Videos also availble</h2>
+					<!-- <p style="margin-top:-1.2rem;">by various Artists</p> -->
+
+					<div class="pagesbar-music">
+						<ul class="pages-music">
+							<li><a href="index.html#videos">Click Here to Watch some Music videos</a></li>
+						</ul>
+					</div>
+
+					<div id="go-btm"><a href="#about" class="go-btm">&#9660;</a></div>
+				</div>
+			</div>
+		</div>
+
+	</section>
+
+	<div class="site_content_index">
+
+		<div id="content">
+			<div class="anchor-box">
+				<hr class="horizontal" />
+				<section id="about">
+					<h3 class="anchor">About</h3>
+				</section>
+				<hr class="horizontal" />
+			</div>
+
+			<ul class="social_media_music">
+				<li><a href="index.html">
+						<img src="pictures/icons/facebook_b.png" alt="Facebook" /></a></li>
+
+				<li><a href="index.html">
+						<img src="pictures/icons/instagram_b.png" alt="Instagram" /></a></li>
+
+				<li><a href="index.html">
+						<img src="pictures/icons/youtube_b.png" alt="YouTube" /></a></li>
+
+				<li><a href="index.html">
+						<img src="pictures/icons/twitter_b.png" alt="Twitter" /></a></li>
+
+			</ul>
+
+			<p>This is a Music Streaming Website made by Madhvan Sharma and Himesh Mahabi. This Website uses HTML, CSS,
+				Javascript. This Site also makes use of some frameworks like JQuery, etc. To know more about the Website
+				click the button below.
+			</p>
+
+			<div class="pagesbar">
+				<ul class="pages">
+					<li><a href="javascript:void(0);" onclick="hideText()">Know More..</a></li>
+					<li class="hide" id="about-text">
+						<p>
+							This Site can play music and their Videos in any known Browsers i.e. Website has been
+							configured to play music in all possible formats like .mp3, .wav, .aac, .ogg, etc. We have
+							also configured the website to play video in any browser in the same way.
+						</p>
+
+						<div id="read-bio">
+							<p>
+								We are able to achieve this compatibility using different source formats. Actually, We
+								have provide audio of the same Music track with different formats. As different Browsers
+								(and Older versions of them) play the audio in different formats. Thus Browser actually
+								checks which audio format it is able to play from top to bottom and the first playable
+								format is Played.
+							</p>
+						</div>
+					</li>
+				</ul>
+			</div>
+
+
+			<!-- <div class="anchor-box">
+				<hr class="horizontal" />
+				<section id="merch">
+					<h3 class="anchor">Merch</h3>
+				</section>
+				<hr class="horizontal" />
+			</div>
+
+			<ul class="grid">
+				<li class="grid_item span j"><a href="index.html" class="grid_link">
+						<div class="tile">New Lgog Designs</div>
+					</a></li>
+				<li class="grid_item span k"><a href="index.html" class="grid_link">
+						<div class="tile">All T-Shirts 20% Off</div>
+					</a></li>
+				<li class="grid_item span l"><a href="index.html" class="grid_link">
+						<div class="tile">Women's Apparel</div>
+					</a></li>
+			</ul> -->
+
+			
+
+			<div class="anchor-box">
+				<hr class="horizontal">
+				<section id="music">
+					<h3 class="anchor">Music</h3>
+				</section>
+				<hr class="horizontal">
+			</div>
+
+			<div class="music-hero">
+				<div id="music-overlay">
+					<div class="hero-text">
+
+						<h2>Want to play Downloaded Music ?</h2>
+						<div class="pagesbar-music">
+							<ul class="pages-music">
+								<li><a href="downloaded-music.html">CLICK HERE</a></li>
+							</ul>
+						</div>
+
+
+						<!-- <ul class="social_media_music">
+
+							<li><a href="index.html">
+									<img src="pictures/icons/itunes.png" alt="iTunes" /></a></li>
+
+							<li><a href="index.html">
+									<img src="pictures/icons/spotify.png" alt="Spotify" /></a></li>
+
+							<li><a href="index.html">
+									<img src="pictures/icons/play.png" alt="Google Play" /></a></li>
+
+							<li><a href="index.html">
+									<img src="pictures/icons/amazon.png" alt="Amazon" /></a></li>
+
+						</ul> -->
+
+					</div>
+				</div>
+			</div>
+
+			<div id="audio-players"></div>
+
+
+			<div class="anchor-box">
+				<hr class="horizontal" />
+				<section id="news">
+					<h3 class="anchor">News</h3>
+				</section>
+				<hr class="horizontal" />
+			</div>
+
+			<ul class="grid">
+				<li class="grid_item span g"><a href="blog_video.html" class="grid_link">
+						<div class="tile">New Music Video</div>
+					</a></li>
+				<li class="grid_item span h"><a href="blog_tour.html" class="grid_link">
+						<div class="tile">Tour Dates Announced</div>
+					</a></li>
+				<li class="grid_item span i"><a href="blog_studio.html" class="grid_link">
+						<div class="tile">In the Studio</div>
+					</a></li>
+			</ul>
+
+			<!-- <div class="anchor-box">
+				<hr class="horizontal" />
+				<section id="press">
+					<h3 class="anchor">Press</h3>
+				</section>
+				<hr class="horizontal" />
+			</div>
+			<table>
+				<tr>
+					<td>"Fusce commodo malesuada ipsum non volutpat. Nulla quis ullamcorper leo, nec tristique lorem."
+					</td>
+				</tr>
+				<tr>
+					<td><b>A&M Press</b></td>
+				</tr>
+				<tr>
+					<td>"Nulla quis ullamcorper leo, nec tristique lorem."</td>
+				</tr>
+				<tr>
+					<td><b>Kstudio Productions</b></td>
+				</tr>
+				<tr>
+					<td>"Fusce commodo malesuada ipsum non volutpat, nulla quis ullamcorper."</td>
+				</tr>
+				<tr>
+					<td><b>The Courant News</b></td>
+				</tr>
+				<tr>
+					<td>"Nulla quis ullamcorper leo, nec tristique lorem. Nulla quis ullamcorper leo."</td>
+				</tr>
+				<tr>
+					<td><b>Jane Doe - Singer / Songwriter</b></td>
+				</tr>
+			</table> -->
+
+
+			<div class="anchor-box">
+				<hr class="horizontal" />
+				<section id="videos">
+					<h3 class="anchor">Videos</h3>
+				</section>
+				<hr class="horizontal" />
+			</div>
+
+			<div class="flexbox-video">
+				<div class="video">
+					<h4 class="center">Coldplay - Fix You</h4>
+					<div class="youtube-player" data-id="1G4isv_Fylg"></div>
+				</div>
+
+				<div class="video">
+					<h4 class="center">Adele - Hello</h4>
+					<div class="youtube-player" data-id="YQHsXMglC9A"></div>
+				</div>
+			</div>
+
+			<div class="anchor-box">
+				<hr class="horizontal" />
+				<section id="subscribe">
+					<h3 class="anchor">Subscribe</h3>
+				</section>
+				<hr class="horizontal" />
+			</div>
+
+			<form id="email-form">
+				<div class="form_settings">
+					<h2>Join our Mailing List</h2>
+					<p>Subscribe to this Website by entering your email below</p>
+					<div class="field">
+						<input type="email" name="email" placeholder="madhvan.sharma@gmail.com" required />
+					</div>
+
+					<div id="myBtn">
+						<div class="field">
+							<input type="button" value="submit" class="submit" />
+						</div>
+					</div>
+				</div>
+			</form>
+
+			<div id="myModal" class="modal">
+
+				<div class="modal-content">
+					<span class="close">&times;</span>
+					<div class="center">
+						<p>Thanks for joining our mailing list!</p>
+						<p><a href="https://docs.google.com/spreadsheets/d/16vtzDg3oQLibwq6ZogGdkpe8W7vqzE5oGK8VZESuvj4/edit?usp=sharing"
+								target="blank">Click here</a> to view the email address you entered.</p>
+					</div>
+				</div>
+
+			</div>
+
+			<div id="myError" class="modal">
+
+				<div class="modal-content">
+					<span class="close_error">&times;</span>
+					<div class="center">
+						<p>Invalid email address. Please try again.</p>
+					</div>
+				</div>
+
+			</div>
+
+			<!-- <div class="anchor-box">
+				<hr class="horizontal" />
+				<section id="shows">
+					<h3 class="anchor">Shows</h3>
+				</section>
+				<hr class="horizontal" />
+			</div>
+
+			<div class="flexbox-shows">
+
+				<div class="shows-text">
+					<div class="center">
+						<h4>New York Theatre</h4>
+					</div>
+					<div class="center">
+						<p>Albany, NY</p>
+					</div>
+					<div class="center">
+						<p>April 15th | 8 - 10 PM</p>
+					</div>
+
+					<div class="pagesbar">
+						<ul class="pages">
+							<li><a href="index.html">Buy Tickets</a></li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="shows-text">
+					<div class="center">
+						<h4>California Music Hall</h4>
+					</div>
+					<div class="center">
+						<p>Sacramento, CA</p>
+					</div>
+					<div class="center">
+						<p>April 18th | 4 - 5 PM</p>
+					</div>
+
+					<div class="pagesbar">
+						<ul class="pages">
+							<li><a href="index.html">Buy Tickets</a></li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="shows-text">
+					<div class="center">
+						<h4>St. Louis Stadium</h4>
+					</div>
+					<div class="center">
+						<p>St. Louis, MO</p>
+					</div>
+					<div class="center">
+						<p>May 3rd | 8 - 12 PM</p>
+					</div>
+
+					<div class="pagesbar">
+						<ul class="pages">
+							<li><a href="index.html">Buy Tickets</a></li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="shows-text">
+					<div class="center">
+						<h4>Hartford Fair</h4>
+					</div>
+					<div class="center">
+						<p>Hartford, CT</p>
+					</div>
+					<div class="center">
+						<p>May 6th | 2 - 3 PM</p>
+					</div>
+
+					<div class="pagesbar">
+						<ul class="pages">
+							<li><a href="index.html">Buy Tickets</a></li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="shows-text">
+					<div class="center">
+						<h4>Boston Park</h4>
+					</div>
+					<div class="center">
+						<p>Boston, MA</p>
+					</div>
+					<div class="center">
+						<p>May 27th | 10 - 2 PM</p>
+					</div>
+
+					<div class="pagesbar">
+						<ul class="pages">
+							<li><a href="index.html">Buy Tickets</a></li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="shows-text">
+					<div class="center">
+						<h4>Nashville Center</h4>
+					</div>
+					<div class="center">
+						<p>Nasville, TN</p>
+					</div>
+					<div class="center">
+						<p>April 19th | 10 - 11:30 AM</p>
+					</div>
+
+					<div class="pagesbar">
+						<ul class="pages">
+							<li><a href="index.html">Buy Tickets</a></li>
+						</ul>
+					</div>
+				</div>
+
+			</div> -->
+
+
+			<div class="anchor-box">
+				<hr class="horizontal" />
+				<section id="photos">
+					<h3 class="anchor">Photos</h3>
+				</section>
+				<hr class="horizontal" />
+			</div>
+
+			<ul class="grid">
+				<li class="grid_item span a"><a href="pictures/gallery/light-show.jpg" class="grid_link"
+						data-lightbox="pics" data-title="Light show"></a></li>
+				<li class="grid_item span b"><a href="pictures/gallery/synth.jpg" class="grid_link" data-lightbox="pics"
+						data-title="Playing synth"></a></li>
+				<li class="grid_item span c"><a href="pictures/gallery/singing.jpg" class="grid_link"
+						data-lightbox="pics" data-title="Singing"></a></li>
+				<li class="grid_item span d"><a href="pictures/gallery/guitar.jpg" class="grid_link"
+						data-lightbox="pics" data-title="Playing guitar"></a></li>
+				<li class="grid_item span e"><a href="pictures/gallery/bass.jpg" class="grid_link" data-lightbox="pics"
+						data-title="Playing bass"></a></li>
+				<li class="grid_item span f"><a href="pictures/gallery/concert.jpg" class="grid_link"
+						data-lightbox="pics" data-title="Concert in CA"></a></li>
+			</ul>
+
+			<div class="pagesbar">
+				<ul class="pages">
+					<li><a href="contact.html">CONTACT US</a></li>
+				</ul>	
+			</div>
+
+			<!-- <form id="contacts" name="htmlform" method="post">
+				<div class="form_settings">
+					<input class="name" type="text" name="name" placeholder="Name" required />
+					<input class="email" type="email" name="email" placeholder="Email" required />
+					<input class="subject" type="text" name="subject" placeholder="Subject" required />
+					<textarea class="message" rows="4" cols="50" name="message" placeholder="Message"
+						required></textarea>
+					<div>
+						<input class="submit" type="submit" name="contact_submitted" value="submit" />
+					</div>
+				</div>
+			</form> -->
+
+
+		</div>
+	</div>
+	
+
+	<footer>
+		<ul id="social_media">
+			<li><a href="https://www.facebook.com/sound/collection/" target="_blank">
+					<img src="pictures/icons/facebook.png" alt="Facebook" /></a></li>
+
+			<li><a href="https://about.instagram.com/blog/announcements/introducing-music-for-instagram-stories" target="_blank">
+					<img src="pictures/icons/instagram.png" alt="Instagram" /></a></li>
+
+			<li><a href="https://music.youtube.com/" target="_blank">
+					<img src="pictures/icons/youtube.png" alt="YouTube" /></a></li>
+
+			<li><a href="https://twitter.com/music?lang=en" target="_blank">
+					<img src="pictures/icons/twitter.png" alt="Twitter" /></a></li>
+
+			<li><a href="https://www.apple.com/in/itunes/" target="_blank">
+					<img src="pictures/icons/itunes.png" alt="iTunes" /></a></li>
+
+			<li><a href="https://open.spotify.com/" target="_blank">
+					<img src="pictures/icons/spotify.png" alt="Spotify" /></a></li>
+
+			<li><a href="index.html#subscribe">
+					<img src="pictures/icons/mail.png" alt="Subscribe" /></a></li>
+		</ul>
+
+		<ul id="btmtext">
+			<li>
+				<h6><a href="terms.html">Made by Madhvan Sharma and Himesh Mahabi</a></h6>
+			</li>
+			<li>
+				<h6><a href="web.html">2K19/SE/068 and 2K19/SE/054</a></h6>
+			</li>
+		</ul>
+	</footer>
+
+	<script src="js/mailingList.js"></script>
+	<script src="js/contact.js"></script>
+	<script src="js/jquery.serialize-object.js"></script>
+	<script src="js/modal.js"></script>
+	<script src="js/fixedNavMenu.js"></script>
+	<script src="js/scroll.js"></script>
+	<script src="js/musPlayer.js"></script>
+	<script src="js/vid.js"></script>
+	<script src="js/lightbox.js"></script>
+	<link rel="stylesheet" href="css/lightbox.css" type="text/css" title="style">
+</body>
+
+</html>
