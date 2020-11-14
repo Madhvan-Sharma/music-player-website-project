@@ -1,12 +1,11 @@
 <?php
 if(isset($_POST['email'])) {
 	
-	//replace your email here
+
 	$email_to = "madhvan.sharma28@gmail.com";
 	
 	
 	function died($error) {
-		// your error code can go here
 		echo '<div class="center"><h2>There were problems submitting your inquiry:</h2></div>';
 		echo '<div class="center"><p>' . $error. '</p></div>';
 		echo '<div class="center">';
@@ -17,7 +16,7 @@ if(isset($_POST['email'])) {
 		die();
 	}
 	
-	// validation expected data exists
+
 	if(!isset($_POST['name']) || 
 		!isset($_POST['email']) ||
 		!isset($_POST['subject']) ||
@@ -25,10 +24,10 @@ if(isset($_POST['email'])) {
 	 died('We are sorry, but there appears to be a problem with the form you submitted.');	
 		}
 	
-	$name = $_POST['name']; // required
-	$email_from = $_POST['email']; // required
-	$subject = $_POST['subject']; // required
-	$message = $_POST['message']; // required
+	$name = $_POST['name'];
+	$email_from = $_POST['email'];
+	$subject = $_POST['subject'];
+	$message = $_POST['message'];
 	
 	$error_message = "";
 	$string_exp = "/^[A-Za-z .'-]+$/";
@@ -61,15 +60,15 @@ if(isset($_POST['email'])) {
 	$email_message .= "Message: ".clean_string($message)."\n";
 	
 	
-// create email headers
+
 $headers = 'From: ' .$email_from. "\r\n"; 
 $headers .= 'Reply-To: ' .$email_from. "\r\n";
 'X-Mailer: PHP/' . phpversion();
 mail($email_to, $subject, $email_message, $headers)
 
 ?>
-<!-- place your own success html below -->
-<div class="center"><h2>Thanks for contacting us!</h2></div>
+
+<div class="center"><h2>Thanks for using our Website!</h2></div>
 <div class="center"><p>We will get back to you as soon as possible.</p></div>
 <?php
 }
