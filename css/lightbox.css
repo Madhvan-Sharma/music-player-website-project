@@ -1,4 +1,4 @@
-/* Preload images */
+
 body:after {
   content: url(../pictures/images/close.png) url(../pictures/images/loading.gif) url(../pictures/images/prev.png) url(../pictures/images/next.png);
   display: none;
@@ -36,7 +36,6 @@ body.lb-disable-scrolling {
   max-height: none;
   border-radius: 3px;
 
-  /* Image border */
   border: 4px solid white;
 }
 
@@ -51,9 +50,6 @@ body.lb-disable-scrolling {
   height: 250px;
   margin: 0 auto;
   border-radius: 4px;
-
-  /* Background color behind image.
-     This is visible during transitions. */
   background-color: white;
 }
 
